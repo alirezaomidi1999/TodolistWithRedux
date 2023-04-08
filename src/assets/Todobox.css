@@ -1,0 +1,51 @@
+.container--todobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  border-radius: 30px;
+  background-color: rgb(26, 27, 27);
+  width: 100%;
+  max-width: 300px;
+}
+
+.todo__text {
+  color: #909094;
+  word-break: break-all;
+}
+
+.text__completed {
+  text-decoration: line-through;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 0.4rem;
+}
+.todo__completed,
+.todo__delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80%;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  padding: 8px;
+  background-color: #909094;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+
+.todo__checked {
+  background-color: #949fa4;
+  box-shadow: 0px 0px 2px 2px #949fa4;
+}
+
+.icon__completed,
+.icon__delete {
+  font-size: 20px;
+  font-weight: bold;
+}
