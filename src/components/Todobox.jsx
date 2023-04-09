@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import DeleteIcon from "@mui/icons-material/Delete";
-import "../assets/Todobox.css";
+import "../styles/Todobox.css";
 import { useDispatch, useSelector } from "react-redux";
 import { removeTodo, toggleTodo } from "./redux/redux toolkit/todoSlice";
 function Todobox({ todoitem }) {

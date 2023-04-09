@@ -1,17 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import "../assets/Addtodo.css";
+import { useDispatch} from "react-redux";
+import "../styles/Addtodo.css";
 import { addTodo } from "./redux/redux toolkit/todoSlice";
 function Addtodo() {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
   const addTodos = () => {
-    if (input !== "")
+    if (input !== "") {
       dispatch(addTodo({ id: Date.now(), title: input, done: false }));
-    setInput("");
+      setInput("");
+    }
   };
-
   return (
     <>
       <div className="container--addtodo">
